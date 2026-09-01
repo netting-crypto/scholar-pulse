@@ -1,0 +1,273 @@
+arxiv_id,title,abstract,your_rating,why_you_care
+2401.00001,Multimodal LLMs for Medical Visual Question Answering,"We present a vision-language model for clinical image understanding and medical document analysis, achieving SOTA on 10 benchmarks.",5,VLM + healthcare + document understanding
+2401.00002,Agentic Vision-Language Systems for Robot Navigation,An agent framework combining VLMs with tool use for autonomous robot navigation and task planning.,5,VLM + agents + robotics - all 3 interests
+2401.00003,RAG-Enhanced Clinical Note Generation with Vision,Retrieval-augmented generation for producing structured clinical notes from multimodal patient data.,4,RAG + healthcare + document generation
+2401.00004,Embodied Agents with Visual Reasoning and Planning,We train embodied AI agents that reason visually to perform long-horizon tasks in open environments.,5,Agents + VLM + embodied AI
+2401.00005,Document Understanding with Multimodal Transformers,"A unified transformer for understanding complex documents combining text, tables, and images.",4,Document understanding + multimodal
+2401.00006,Tool-Augmented LLMs for Healthcare Workflows,LLM agents that call external medical APIs to assist clinicians with diagnosis and treatment planning.,4,Agents + healthcare + tool use
+2401.00007,Visual Instruction Tuning for Medical Imaging,Instruction tuning vision-language models on radiology reports improves diagnostic accuracy significantly.,5,VLM + healthcare + instruction tuning
+2401.00008,Agentic Code Generation with Visual Understanding,Agents that generate and debug code by understanding visual outputs like charts and diagrams.,3,"Agents + VLM, but less relevant to healthcare"
+2401.00009,Multimodal Chain-of-Thought Reasoning in Clinical Settings,Chain-of-thought prompting for multimodal models applied to clinical decision support.,5,VLM + healthcare + reasoning
+2401.0001,Vision-Language Models for Robotic Manipulation,VLMs enable robots to understand natural language instructions and execute fine-grained manipulation tasks.,4,VLM + robotics + instruction following
+2401.0002,Efficient Reasoning Models: A Survey,"Reasoning models have demonstrated remarkable progress in solving complex and logic intensive tasks by generating extended Chain-of-Thoughts (CoTs) prior to arriving at a final answer. Yet, the emergence of this �slow-thinking� paradigm, with numerous tokens generated in sequence, inevitably introduces substantial computational overhead. To this end, it highlights an urgent need for effective acceleration. This survey aims to provide a comprehensive overview of recent advances in efficient reasoning. It categorizes existing works into three key directions: (1) shorter� compressing lengthy CoTs into concise yet effective reasoning chains; (2) smaller� developing compact language models with strong reasoning capabilities through techniques such as knowledge distillation, other model com pression techniques, and reinforcement learning; and (3) faster� designing efficient decoding strategies to accelerate inference. A curated collection of papers discussed in this survey is available in our GitHub repository1",5,VLM +  reasoning 
+2401.0003,Auto-Encoding Knowledge Graph for Unsupervised Medical Report Generation,"Medical report generation, which aims to automatically generate a long and coher ent report of a given medical image, has been receiving growing research interests. Existing approaches mainly adopt a supervised manner and heavily rely on cou pled image-report pairs. However, in the medical domain, building a large-scale image-report paired dataset is both time-consuming and expensive. To relax the dependency on paired data, we propose an unsupervised model Knowledge Graph Auto-Encoder (KGAE) which accepts independent sets of images and reports in training. KGAE consists of a pre-constructed knowledge graph, a knowledge driven encoder and a knowledge-driven decoder. The knowledge graph works as the shared latent space to bridge the visual and textual domains; The knowledge-driven encoder projects medical images and reports to the corresponding coordinates in this latent space and the knowledge-driven decoder generates a medical report given a coordinate in this space. Since the knowledge-driven encoder and decoder can be trained with independent sets of images and reports, KGAE is unsupervised. The experiments show that the unsupervised KGAE generates desirable medical reports without using any image-report training pairs. Moreover, KGAE can also work in both semi-supervised and supervised settings, and accept paired images and reports in training. By further fine-tuning with image-report pairs, KGAE consistently outperforms the current state-of-the-art models on two datasets.",5,VLM + medical report generation + Knoweldge graph
+2401.0004,Large language models for efficient whole-organ MRI score-based reports and categorization in knee osteoarthritis,"Objectives To evaluate the performance of large language models (LLMs) in automatically generating whole-organ
+MRI score (WORMS)-based structured MRI reports and predicting osteoarthritis (OA) severity for the knee.
+Methods A total of 160 consecutive patients suspected of OA were included. Knee MRI reports were reviewed by
+three radiologists to establish the WORMS reference standard for 39 key features. GPT-4o and GPT-4o-mini were
+prompted using in-context knowledge (ICK) and chain-of-thought (COT) to generate WORMS-based structured reports
+from original reports and to automatically predict the OA severity. Four Orthopedic surgeons reviewed original and
+LLM-generated reports to conduct pairwise preference and difficulty tests, and their review times were recorded.
+Results GPT-4o demonstrated perfect performance in extracting the laterality of the knee (accuracy = 100%). GPT-4o
+outperformed GPT-4o mini in generating WORMS reports (Accuracy: 93.9% vs 76.2%, respectively). GPT-4o achieved
+higher recall (87.3% s 46.7%, p < 0.001), while maintaining higher precision compared to GPT-4o mini (94.2% vs 71.2%,
+p<0.001). For predicting OA severity, GPT-4o outperformed GPT-4o mini across all prompt strategies (best accuracy:
+98.1% vs 68.7%). Surgeons found it easier to extract information and gave more preference to LLM-generated reports
+over the original reports (both p < 0.001) while spending less time on each report (51.27 � 9.41 vs 87.42 � 20.26 s,
+p<0.001).
+Conclusion GPT-4o generated expert multi-feature, WORMS-based reports from original free-text knee MRI reports.
+GPT-4o with COT achieved high accuracy in categorizing OA severity. Surgeons reported greater preference and
+higher efficiency when using LLM-generated reports.
+Critical relevance statement The perfect performance of generating WORMS-based reports and the high efficiency
+and ease of use suggest that integrating LLMs into clinical workflows could greatly enhance productivity and alleviate
+the documentation burden faced by clinicians in knee OA.",1,predicting osteoarthritis (OA) severity for the knee
+2401.0005,"VL-OrdinalFormer: Vision�Language Guided Ordinal
+Transformers for Interpretable Knee Osteoarthritis
+
+Grading","Knee osteoarthritis (KOA) is a leading cause of disability worldwide, and
+
+accurate severity assessment using the Kellgren�Lawrence (KL) grading sys-
+tem is critical for clinical decision-making. However, radiographic distinc-
+tions between early disease stages, particularly KL1 and KL2, are subtle and
+
+frequently lead to inter-observer variability among radiologists. To address
+these challenges, we propose VL-OrdinalFormer, a vision�language-guided
+ordinal learning framework for fully automated KOA grading from knee
+radiographs. The proposed method combines a ViT-L/16 backbone with
+
+CORAL-based ordinal regression and a Contrastive Language�Image Pre-
+training (CLIP) driven semantic alignment module, allowing the model to
+
+incorporate clinically meaningful textual concepts related to joint space nar-
+rowing, osteophyte formation, and subchondral sclerosis. To improve robust-
+ness and mitigate overfitting, we employ stratified five-fold cross-validation,
+
+class-aware re-weighting to emphasize challenging intermediate grades, and
+test-time augmentation with global threshold optimization. Experiments
+conducted on the publicly available OAI kneeKL224 dataset demonstrate
+
+that VL-OrdinalFormer achieves state-of-the-art performance, outperform-
+ing CNN and ViT baselines in terms of macro F1-score and overall accuracy.
+
+Notably, the proposed framework yields substantial performance gains for
+KL1 and KL2 without compromising classification accuracy for mild or severe
+
+cases. In addition, interpretability analyses using Grad-CAM and CLIP sim-
+ilarity maps confirm that the model consistently attends to clinically relevant
+
+anatomical regions. These results highlight the potential of vision�language-
+aligned ordinal transformers as reliable and interpretable tools for KOA grad-
+arXiv:2601.00879v1 [cs.CV] 31 Dec 2025
+
+ing and disease progression assessment in routine radiological practice. Code
+is available at: https://github.com/Zahid672/kneeKL224
+Keywords: Knee osteoarthritis; Kellgren-Lawrence grading; Vision
+Transformer; Ordinal regression; Vision-language modeling.",4,"VLM +  Knee Osteoarthritis
+"
+2401.0006,CXRAgent: Director-Orchestrated Multi-Stage Reasoning for Chest X-Ray Interpretation,"Abstract�Chest X-ray (CXR) plays a pivotal role in clinical
+diagnosis, and a variety of task-specific and foundation models
+
+have been developed for automatic CXR interpretation. How-
+ever, these models often struggle to adapt to new diagnostic
+
+tasks and complex reasoning scenarios. Recently, LLM-based
+agent models have emerged as a promising paradigm for CXR
+analysis, enhancing model�s capability through tool coordination,
+multi-step reasoning, and team collaboration, etc. However,
+existing agents often rely on a single diagnostic pipeline and
+lack mechanisms for assessing tools� reliability, limiting their
+adaptability and credibility. To this end, we propose CXRAgent, a
+director-orchestrated, multi-stage agent for CXR interpretation,
+where a central director coordinates the following stages: (1)
+Tool Invocation: The agent strategically orchestrates a set of
+CXR-analysis tools, with outputs normalized and verified by
+the Evidence-driven Validator (EDV), which grounds diagnostic
+outputs with visual evidence to support reliable downstream
+diagnosis; (2) Diagnostic Planning: Guided by task requirements
+
+and intermediate findings, the agent formulates a targeted di-
+agnostic plan. It then assembles an expert team accordingly,
+
+defining member roles and coordinating their interactions to
+enable adaptive and collaborative reasoning; (3) Collaborative
+Decision-making: The agent integrates insights from the expert
+team with accumulated contextual memories, synthesizing them
+into an evidence-backed diagnostic conclusion. Experiments on
+various CXR interpretation tasks show that CXRAgent delivers
+strong performance, providing visual evidence and generalizes
+well to clinical tasks of different complexity. Code and data are
+valuable at this link.
+Index Terms�Chest X-ray interpretation, medical agent, large
+multimodal model, multi-stage reasoning.",5,"X-ray interpretation, medical agent, large multimodal model, multi-stage reasoning."
+2401.0007,"MMED-RAG: VERSATILE MULTIMODAL RAG SYS-
+TEM FOR MEDICAL VISION LANGUAGE MODELS","Artificial Intelligence (AI) has demonstrated significant potential in healthcare,
+
+particularly in disease diagnosis and treatment planning. Recent progress in Med-
+ical Large Vision-Language Models (Med-LVLMs) has opened up new possibil-
+ities for interactive diagnostic tools. However, these models often suffer from
+
+factual hallucination, which can lead to incorrect diagnoses. Fine-tuning and
+retrieval-augmented generation (RAG) have emerged as methods to address these
+issues. However, the amount of high-quality data and distribution shifts between
+
+training data and deployment data limit the application of fine-tuning methods. Al-
+though RAG is lightweight and effective, existing RAG-based approaches are not
+
+sufficiently general to different medical domains and can potentially cause mis-
+alignment issues, both between modalities and between the model and the ground
+
+truth. In this paper, we propose a versatile multimodal RAG system, MMed-RAG,
+designed to enhance the factuality of Med-LVLMs. Our approach introduces a
+domain-aware retrieval mechanism, an adaptive retrieved contexts selection, and
+a provable RAG-based preference fine-tuning strategy. These innovations make
+
+the RAG process sufficiently general and reliable, significantly improving align-
+ment when introducing retrieved contexts. Experimental results across five med-
+ical datasets (involving radiology, ophthalmology, pathology) on medical VQA
+
+and report generation demonstrate that MMed-RAG can achieve an average im-
+provement of 43.8% in the factual accuracy of Med-LVLMs. Our data and code
+
+are available in https://github.com/richard-peng-xia/MMed-RAG.",5,VLM + Healthcare + RAG
+2401.0008,"Unsupervised Contrastive Refinement with
+Graph-Aware Multimodal Interaction for
+
+Radiology Report Generation","Abstract� Automatic Radiology Report Generation
+(RRG) reduces medical workload by automatically
+generating diagnostic reports from X-ray images. In recent
+studies, an improved performance has been observed
+by first classifying the image and then incorporating
+
+clinical outcomes into the RRG pipeline, with cross-
+modal interactions between image and text. However,
+
+these studies have limitations (specifically on chest
+X-ray), including : (1) inconsistent cross-modal learning
+due to under-utilization of textual information, and
+(2) reliance on noisy classification labels, resulting in
+inaccurate attention and invariant report generation. To
+address these issues, a Medical Context-aware RRG
+Framework (MedCARF) is proposed, which introduces
+a Disease-Aware Visual Textual Alignment (D-ViTAlign)
+module to capture organ�abnormality relationships from
+scene graphs and visual features. Label refinement
+is achieved using an unsupervised Augmentation
+Distillation with Contrastive Refinement (AuDiCoR)
+loss, which iteratively refines the visual features via
+augmentation alignment and loss modelling. In addition,
+the knee OAI dataset is benchmarked for the RRG
+task, and the performance of MedCARF contributions
+is explicitly tested on this dataset. Furthermore,
+Knee RRG performance is evaluated using multimodal
+information, including biomechanical data. Experimental
+results showed that a minimum 3.2% improvement in
+METEOR and a 4.22% AUC gain over classification SOTA
+are achieved for chest X-ray, while a 9.69% average
+improvement across all NLG metrics is observed for
+knee RRG with biomechanical data integration. Overall,
+contextually accurate reports are generated and consistent
+classification performance is achieved, including for
+minority classes, demonstrating the robustness and
+clinical applicability of the proposed framework. The Code
+will be available at: https://github.com/adaydar/MedCARF.
+
+Index Terms� cross-modal interactions, label refine-
+ment, contrastive loss, multimodal, biomechanical data.",5,Radiology Report Generation  + VLM +  Knee Osteoarthritis+ Graph knoweldge
+2401.0009,R2GenKG: Hierarchical Multi-modal Knowledge Graph for LLM-based Radiology Report Generation,"X-ray medical report generation is one of the important ap
+plications of artificial intelligence in healthcare. With the
+support of large foundation models, the quality of medi
+cal report generation has significantly improved. However,
+challenges such as hallucination and weak disease diag
+nostic capability still persist. In this paper, we first con
+struct a large-scale multi-modal medical knowledge graph
+(termed M3KG) based on the ground truth medical report
+using the GPT-4o. It contains 2477 entities, 3 kinds of rela
+tions, 37424 triples, and 6943 disease-aware vision tokens
+for the CheXpert Plus dataset. Then, we sample it to ob
+tain multi-granularity semantic graphs and use an R-GCN
+encoder for feature extraction. For the input X-ray image,
+we adopt the Swin-Transformer to extract the vision fea
+tures and interact with the knowledge using cross-attention.
+The vision tokens are fed into a Q-former and retrieved the
+disease-aware vision tokens using another cross-attention.
+Finally, we adopt the large language model to map the se
+mantic knowledge graph, input X-ray image, and disease
+aware vision tokens into language descriptions. Extensive
+experiments on multiple datasets fully validated the effec
+tiveness of our proposed knowledge graph and X-ray re
+port generation framework. The source code of this paper
+will be released on https://github.com/Event
+AHU/Medical_Image_Analysis",5,VLM + Knowledge Graph for LLM-based Radiology Report Generation
+2401.001,"Automated Structured Radiology Report Generation
+","Automated radiology report generation from
+chest X-ray (CXR) images has the potential
+to improve clinical efficiency and reduce radi
+ologists� workload. However, most datasets,
+including the publicly available MIMIC-CXR
+and CheXpert Plus, consist entirely of free
+form reports, which are inherently variable and
+unstructured. This variability poses challenges
+for both generation and evaluation: existing
+models struggle to produce consistent, clini
+cally meaningful reports, and standard evalua
+tion metrics fail to capture the nuances of radio
+logical interpretation. To address this, we intro
+duce Structured Radiology Report Generation
+(SRRG), a new task that reformulates free-text
+radiology reports into a standardized format,
+ensuring clarity, consistency, and structured
+clinical reporting. We create a novel dataset
+by restructuring reports using large language
+models (LLMs) following strict structured re
+porting desiderata. Additionally, we introduce
+SRR-BERT, a fine-grained disease classifica
+tion model trained on 55 labels, enabling more
+precise and clinically informed evaluation of
+structured reports. To assess report quality, we
+propose F1-SRR-BERT, a metric that leverages
+SRR-BERT�s hierarchical disease taxonomy to
+bridge the gap between free-text variability and
+structured clinical reporting. We validate our
+dataset through a reader study conducted by
+five board-certified radiologists and extensive
+benchmarking experiments.",3,"Structured Radiology Report Generation
+(SRRG)"
+2401.002,"RETHINKING RADIOLOGY REPORT GENERATION:
+FROM NARRATIVE FLOW TO TOPIC-GUIDED FIND
+INGS","Vision-Language Models (VLMs) for radiology report generation are typically
+trained to mimic the narrative flow of human experts. However, we identify a po
+tential limitation in this conventional paradigm. We hypothesize that optimizing
+for narrative coherence encourages models to rely on linguistic priors and inter
+sentence correlations, which can weaken their grounding in direct visual evidence
+and lead to factual inaccuracies. To investigate this, we design a controlled ex
+periment demonstrating that as textual context increases, a model�s reliance on
+the input image systematically decays. We propose LLaVA-TA (Topic-guided
+and Anatomy-aware), a new fine-tuning framework that directly addresses this
+challenge by re-engineering the generation process. Instead of producing a linear
+narrative, LLaVA-TA decomposes the report into a set of independent, clinically
+relevant topics. By training the model to generate a discrete finding for each topic
+conditioned on both the full image and its corresponding anatomical region, we re
+duce the model�s reliance on narrative flow and enforce stricter visual grounding.
+Our experiments show that LLaVA-TA sets a new state of the art on the MIMIC
+CXRdataset, significantly improving clinical accuracy on metrics like RadGraph
+F1 (from 29.4 to 44.0) and CheXpert F1-14 (from 39.5 to 71.5) over strong base
+lines. Our work demonstrates that dismantling a report�s narrative structure to en
+force independent, visually-grounded observations is a crucial and effective step
+toward building more accurate and reliable medical VLMs.",4.5, RADIOLOGY REPORT GENERATION (RRG) +  Visual grounding
+2606.13675v1,Improving Robotic Generalist Policies via Flow Reversal Steering,"Generalist policies can learn a wide range of skills from diverse robot datasets. In order to solve or improve on challenging news tasks, we need a way to infer and invoke the appropriate actions from the policy's rich behavioral prior, especially when directly commanding the policy fails. We focus ",3,"This paper is not directly related to the user's interests in X-ray interpretation, Structured Radiology Report Generation, or Document understanding + multimodal."
+2606.13460v1,VISA: VLM-Guided Instance Semantic Auditing for 3D Occupancy World Models,"Semantic 3D occupancy provides a voxelized world state for autonomous driving and robot decision making, but object and rare-class errors can affect free-space interpretation, collision checking, and temporal state propagation. We show that a common VLM strategy, aligning 3D voxel or object features",1,"The paper is somewhat relevant to multimodal and document understanding, but its focus on 3D occupancy world models and autonomous driving is less relevant to the user's interests in radiology and hea"
+2606.13572v1,ArogyaSutra: A Multi-Agent Framework for Multimodal Medical Reasoning in Indic Languages,"Multimodal Large Language Models (MLLMs) have shown promising reasoning capabilities in general domains, yet their performance remains limited in specialized settings such as healthcare, especially in multilingual and low-resource scenarios. This gap is critical in regions like rural India, where pa",4,"The paper ArogyaSutra is relevant to the user's interests in multimodal medical reasoning, agents, and healthcare."
+2606.13220v1,LLM-as-an-Investigator: Evidence-First Reasoning for Robust Interactive Problem Diagnosis,"Large language models (LLMs) are increasingly used as interactive assistants for technical problem solving. However, when users provide incomplete descriptions or plausible but unverified explanations, LLMs may prematurely align with these assumptions and propose solutions before collecting sufficie",5,"#evidence-first, #agentic, #AI, #methodology, #robust, #problem, #diagnosis"
+2606.13262v1,From Verdict to Process: Agentic Reinforcement Learning for Multi-Stage Fact Verification,"Recent approaches combining Large Language Models (LLMs) with retrieval-augmented reasoning have shown promise for automated fact verification. To process complex claims, these verification pipelines typically execute multi-stage workflows that coordinate tightly coupled modules, including claim dec",2,
+2606.20477v1,Scalable Training of Spatially Grounded 2D Vision-Language Models for Radiology,"We study how to train visually grounded vision-language models (VLMs) for radiology without manual spatial annotations. We introduce RefRad2D, a large-scale bilingual (German/English) dataset of 1.2M CT and MR image-text pairs derived from clinical practice, with task-specific VQA and spatial ground",4,"#VLM, #healthcare, #radiology, #instruction following, #spatial grounding"
+2606.20246v1,Finetuning Vision-Language-Action Models Requires Fewer Layers Than You Think,"Vision-Language-Action (VLA) models pre-trained on massive video-robot datasets have revolutionized robotic manipulation, yet their multi-billion parameter architectures impose prohibitive computational burdens during downstream fine-tuning and real-time inference. In this work, we reveal a highly n",4,"#Vision-Language-Action, #model compression, #layer-wise representational redundancy"

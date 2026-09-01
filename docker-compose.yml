@@ -1,0 +1,32 @@
+services:
+  scholar-pulse:
+    platform: linux/amd64
+    build: .
+    env_file: .env
+    volumes:
+      - ./logs:/app/logs
+      - ./data:/app/data
+    restart: unless-stopped
+
+  feedback-server:
+    platform: linux/amd64
+    build: .
+    command: uv run uvicorn src.feedback_server:app --host 0.0.0.0 --port 8000
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+    env_file: .env
+    restart: unless-stopped
+
+  dashboard:
+    platform: linux/amd64
+    build: .
+    command: uv run python dashboard.py
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./logs:/app/logs
+      - ./data:/app/data
+    env_file: .env
+    restart: unless-stopped
