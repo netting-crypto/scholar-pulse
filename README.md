@@ -4,6 +4,12 @@ Monitors ArXiv daily, ranks papers by **your** interests using RAG, and emails y
 personalized digest every morning. You rate papers directly in the email; ratings
 feed back into the ranking model automatically.
 
+## Film
+
+<video src="https://github.com/user-attachments/assets/32ab7f3d-a000-43da-806c-d5a0b894bc7a" controls width="100%"></video>
+
+A 60-second product film with no narration. It frames ScholarPulse as the morning edition: the daily paper flood, the four product decisions behind it (delivery, ranking cost, feedback loop, and retrieval evaluation), and the pipeline that runs itself every morning at 8am.
+
 ---
 
 ## Problem
