@@ -6,11 +6,11 @@ feed back into the ranking model automatically.
 
 ## Film
 
-<video src="https://github.com/user-attachments/assets/7b1fea11-fd65-4355-8de5-435351708f8a" controls width="100%"></video>
+[<img src="https://netting-crypto.github.io/videos/scholar-pulse-film-cover.jpg" width="100%" alt="ScholarPulse — 60-second product film. Click to play.">](https://netting-crypto.github.io/videos/scholar-pulse-film.mp4)
 
 A 60-second product film with no narration. It frames ScholarPulse as the morning edition: the daily paper flood, the four product decisions behind it (delivery, ranking cost, feedback loop, and retrieval evaluation), and the pipeline that runs itself every morning at 8am.
 
-Slow to load? [Watch the film from the mirror](https://netting-crypto.github.io/videos/scholar-pulse-film.mp4).
+**Watch:** [Mirror (fastest)](https://netting-crypto.github.io/videos/scholar-pulse-film.mp4) · [Feishu / 飞书](https://my.feishu.cn/file/SSzabK08ZoUasCx2jWFccigingg) · [GitHub-hosted copy](https://github.com/user-attachments/assets/7b1fea11-fd65-4355-8de5-435351708f8a)
 
 ---
 
