@@ -6,7 +6,7 @@ feed back into the ranking model automatically.
 
 ## Film
 
-<video src="https://github.com/user-attachments/assets/32ab7f3d-a000-43da-806c-d5a0b894bc7a" controls width="100%"></video>
+<video src="https://github.com/user-attachments/assets/7b1fea11-fd65-4355-8de5-435351708f8a" controls width="100%"></video>
 
 A 60-second product film with no narration. It frames ScholarPulse as the morning edition: the daily paper flood, the four product decisions behind it (delivery, ranking cost, feedback loop, and retrieval evaluation), and the pipeline that runs itself every morning at 8am.
 
