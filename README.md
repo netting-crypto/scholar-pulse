@@ -6,7 +6,7 @@ feed back into the ranking model automatically.
 
 ## Film
 
-<video src="https://github.com/user-attachments/assets/7b1fea11-fd65-4355-8de5-435351708f8a" controls width="100%"></video>
+<video src="https://netting-crypto.github.io/videos/scholar-pulse-film.mp4" controls width="100%"></video>
 
 A 60-second product film with no narration. It frames ScholarPulse as the morning edition: the daily paper flood, the four product decisions behind it (delivery, ranking cost, feedback loop, and retrieval evaluation), and the pipeline that runs itself every morning at 8am.
 
